@@ -4,4 +4,4 @@ The object of this assignment is to:
 * Remove all zip codes that are not in the contiguous United States, i.e., Alaska, Hawaii, Puerto Rico.
 * Plot the points as an XY scatter. 
 
-![Zip code plot]()
+![Zip code plot](ad)
