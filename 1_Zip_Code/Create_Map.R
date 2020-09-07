@@ -14,7 +14,7 @@ contig_zipcodes <- droplevels( zipcodes[!(zipcodes$state_name %in% c("Puerto Ric
 
 # Create the plot!
 # Plot twice to get black border around circle. Adjust the alpha so points are opaque.
-# Tweak the axis to get nicer breaks, label the axis, and remove the ledgend.
+# Tweak the axis to get nicer breaks, label the axis, and remove the legend.
 ggplot(data = contig_zipcodes, mapping = aes(x=lng, y=lat)) +
   geom_point(aes(color = state_name), alpha = 0.6) +
   geom_point(shape = 1, color = "black", alpha = 0.1) +
