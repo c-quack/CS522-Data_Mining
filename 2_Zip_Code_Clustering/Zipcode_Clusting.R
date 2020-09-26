@@ -28,20 +28,3 @@ fviz_cluster(zip_clusters, lat_lng, geom = "point", ellipse = F, outlier.pointsi
   labs(x = "Longitude", y = "Latitude", title = "DBSCAN - EPS=0.24 - k=60") +
   scale_x_continuous(breaks = seq(-150, 0, 5)) +
   theme(legend.position = "none")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
