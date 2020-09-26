@@ -26,5 +26,4 @@ zip_clusters <- dbscan(lat_lng, eps = .24, minPts = 60, borderPoints = F)
 # Visualize the results
 fviz_cluster(zip_clusters, lat_lng, geom = "point", ellipse = F, outlier.pointsize = 0, outlier.shape = 3, shape = 16, stand = F) +
   labs(x = "Longitude", y = "Latitude", title = "DBSCAN - EPS=0.24 - k=60") +
-  scale_x_continuous(breaks = seq(-150, 0, 5)) +
-  theme(legend.position = "none")
+  scale_x_continuous(breaks = seq(-150, 0, 5))
