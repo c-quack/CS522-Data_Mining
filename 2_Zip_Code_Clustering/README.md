@@ -7,6 +7,6 @@ To accomplish this I used DBSCAN (Density-based spatial clustering of applicatio
 
 ![plot1](kNN_plot.png)
 
-Once we determine what values seem reasonable it's time to run DBSCAN and plot the results. In the plot below, balck points are noise points and the colored points are different clusters.
+Once we determine what values seem reasonable it's time to run DBSCAN and plot the results. In the plot below, balck points are noise points and the colored points are different clusters. You can find the code used to create these plots above.
 
 ![plot2](zipCode_clustering.png)
