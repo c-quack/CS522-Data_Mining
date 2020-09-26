@@ -21,7 +21,7 @@ kNNdistplot(lat_lng, k = 60)
 abline(h = 0.24, lty = 2)
 
 # DBSCAN: Density-based spatial clustering of applications with noise 
-zip_clusters <- dbscan(lat_lng, eps = .24, minPts = 60, borderPoints = F)
+zip_clusters <- dbscan(lat_lng, eps = .24, minPts = 60)
 
 # Visualize the results
 fviz_cluster(zip_clusters, lat_lng, geom = "point", ellipse = F, outlier.pointsize = 0, outlier.shape = 3, shape = 16, stand = F) +
