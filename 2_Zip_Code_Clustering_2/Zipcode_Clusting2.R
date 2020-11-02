@@ -1,3 +1,9 @@
+#####------------------------------------------------------------------------------------------------------#####
+# Corey Quackenbush
+# CS 522 - Data Mining
+# 11/3/2020
+#####------------------------------------------------------------------------------------------------------#####
+
 # Load packages, set the working directory, and read in the data table.
 library(ggplot2)
 library(dbscan)
@@ -87,10 +93,14 @@ kmeanClusters <- kmeans(lat_lng, centers = 20, iter.max = 100)
 kmeans_zips <- cbind(zipcodes, cluster = kmeanClusters$cluster)
 kmeans_zips$cluster <- factor(kmeans_zips$cluster)
 
+# Extract centers for plotting
+centers <- as.data.frame(kmeanClusters$centers)
+
 ##### Overlay top 20 kmeans clusters on top of US map
 ggplot() + geom_polygon( data=contiguous_states, aes(x=long, y=lat, group = group),color="black", fill="grey" ) +
   geom_point(data = kmeans_zips, aes(x=lng, y=lat, color = cluster)) +
   geom_point(data =kmeans_zips, aes(x=lng, y=lat), shape = 1, color = "black", alpha = 0.1) +
+  geom_point(data = centers, aes(x=lng, y=lat), shape = 3, size = 3, stroke = 1) +
   labs(x = "Longitude", y = "Latitude", title = "Kmeans Clustering - k=20") +
   scale_x_continuous(breaks = seq(-150, 0, 5))
 
