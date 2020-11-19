@@ -1,2 +1,2 @@
-# CS522 - Data Mining
+# CS 522 - Data Mining
 A place for CS 522 - Data Mining - projects.
