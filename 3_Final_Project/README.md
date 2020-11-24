@@ -5,3 +5,5 @@ This directory contains the deliverables for my semester project. You can also c
 * [Technical presentation](Quackenbush_Technical.pdf)
 * [Poster](Quackenbush_Poster.pdf)
 * [Project synopsis (45 sec video)](https://youtu.be/6yuFwbip8V8)
+* [R code](Quackenbush_Final_Project.R)
+* [Raw Data](insurance.csv)
