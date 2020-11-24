@@ -1,3 +1,7 @@
-# Final Project Components
+# Semester Project Components
 
-Above, you’ll find the original data set and R script used in my final project.
+This directory contains the deliverables for my semester project. You can also click the links below.
+* [Report](/Quackenbush_Report.pdf)
+* [Technical presentation](/Quackenbush_Technical.pdf)
+* [Poster](/Quackenbush_Poster.pdf)
+* [Project synopsis (45 sec video)](https://youtu.be/6yuFwbip8V8)
